@@ -1,8 +1,8 @@
 # E&C SOP Management Platform - Deployment Information
 
-## ✅ Deployment Successful! (Updated)
+## ✅ Successfully Deployed from GitHub Repository!
 
-The E&C SOP End-To-End Management Platform has been successfully deployed to Databricks Apps with the latest configuration.
+The E&C SOP End-To-End Management Platform has been successfully deployed to Databricks Apps directly from the GitHub repository.
 
 ---
 
@@ -14,177 +14,253 @@ The E&C SOP End-To-End Management Platform has been successfully deployed to Dat
 
 **GitHub Repository:** https://github.com/suryasai87/ec-sop-management-platform
 
+**Databricks Workspace:** https://fe-vm-hls-amer.cloud.databricks.com
+
 ---
 
 ## 📋 Deployment Details
 
 - **App Name:** ec-sop-management-platform
-- **App ID:** 695b4567-ee0d-4ae7-b427-1ca6c6070bb5
-- **Deployment ID:** 01f0c0ccd17c1986b3c6f37fbc935293
+- **App ID:** c1628dea-edcc-44c7-a107-f70ba1a34a58
+- **Deployment ID:** 01f0c0ce3dba126aa5f2a976f0f22ed4
 - **Deployment Mode:** SNAPSHOT
 - **Compute Size:** MEDIUM
 - **Workspace:** https://fe-vm-hls-amer.cloud.databricks.com (DEFAULT profile)
 - **Profile Used:** DEFAULT
 
-**Note:** LIQUID (serverless) compute was not available in this workspace. The app uses MEDIUM compute size instead.
+### 🎯 Deployment Source
+
+**✅ Deployed from GitHub via Databricks Repos:**
+- **Repository URL:** https://github.com/suryasai87/ec-sop-management-platform.git
+- **Provider:** GitHub
+- **Branch:** main
+- **Commit ID:** c39ad85460eacd381a2e696de461ce8c75ae2092
+- **Repos Path:** /Workspace/Repos/suryasai.turaga@databricks.com/ec-sop-management-platform
+- **Default Source Path:** /Workspace/Repos/suryasai.turaga@databricks.com/ec-sop-management-platform
+
+This deployment is now **directly linked** to the GitHub repository, enabling automatic updates when you push code changes!
 
 ---
 
 ## 👤 Deployment Information
 
 - **Deployed By:** suryasai.turaga@databricks.com
-- **Created:** 2025-11-13T20:06:42Z
-- **Deployed:** 2025-11-13T20:10:48Z
-- **Last Updated:** 2025-11-13T20:10:36Z
+- **Created:** 2025-11-13T20:16:52Z
+- **Deployed:** 2025-11-13T20:20:52Z
+- **Last Updated:** 2025-11-13T20:20:47Z
 
 ---
 
 ## 📁 Source Code Locations
 
-**GitHub Repository:** https://github.com/suryasai87/ec-sop-management-platform
-- Public repository with all source code
-- Direct git clone: `git clone https://github.com/suryasai87/ec-sop-management-platform.git`
+**GitHub Repository (Primary Source):**
+- **URL:** https://github.com/suryasai87/ec-sop-management-platform
+- **Clone:** `git clone https://github.com/suryasai87/ec-sop-management-platform.git`
 
-**Workspace Path:** /Workspace/Users/suryasai.turaga@databricks.com/ec-sop-app
+**Databricks Repos:**
+- **Path:** /Workspace/Repos/suryasai.turaga@databricks.com/ec-sop-management-platform
+- **Repo ID:** 4362073218627709
 
-**Deployment Artifacts:** /Workspace/Users/695b4567-ee0d-4ae7-b427-1ca6c6070bb5/src/01f0c0ccd17c1986b3c6f37fbc935293
+**Deployment Artifacts:**
+- **/Workspace/Users/c1628dea-edcc-44c7-a107-f70ba1a34a58/src/01f0c0ce3dba126aa5f2a976f0f22ed4
 
 ---
 
 ## 🔐 OAuth & Service Principal
 
-- **OAuth2 Client ID:** 4ab4bca1-a6f1-440e-8c6e-8fa82b4ee011
-- **Service Principal ID:** 76847417401973
+- **OAuth2 Client ID:** 62ab2832-2b9c-46fd-9645-06943064d099
+- **Service Principal ID:** 77116612847601
 - **Service Principal Name:** app-40zbx9 ec-sop-management-platform
 
 ---
 
 ## 📊 Application Features
 
-### ✅ All Features Deployed:
+### ✅ All Features Deployed from Git:
 
 1. **Dashboard (🏠)**
-   - Landing page with metrics
+   - Professional landing page with E&C branding
+   - Key metrics with delta indicators
    - Recent activity feed (last 8 submissions)
-   - Status distribution pie chart
-   - Quick stats sidebar with real-time metrics
-   - Call-to-action for SharePoint access
+   - Status distribution donut chart
+   - Quick stats sidebar
+   - SharePoint portal access button
 
 2. **Submit SOP (📝)**
-   - Comprehensive submission form with 9 fields
+   - Comprehensive 9-field submission form
    - File upload (PDF/Word, max 50MB)
-   - Form validation with error messages
+   - Real-time form validation
    - Auto-generated SOP IDs (SOP-2025-XXX)
-   - Success animations and confirmations
+   - Success animations with balloons
+   - Save as draft functionality
 
 3. **Track Deviations (📊)**
-   - Interactive data table with 50 sample records
-   - Triple-filter support (Status, Reviewer, Department)
-   - Real-time search functionality
-   - Export to CSV with timestamps
-   - Summary statistics for filtered data
+   - Interactive data table
+   - 50 realistic sample records
+   - Triple-filter support:
+     - Status filter
+     - Reviewer filter
+     - Department filter
+   - Real-time search by ID or Title
+   - Export to CSV with timestamp
+   - Summary statistics panel
 
 4. **Analytics (📈)**
-   - 6 comprehensive visualizations:
-     - Status Distribution (donut chart with colors)
+   - **6 Comprehensive Visualizations:**
+     - Status Distribution (donut with colors)
      - Submissions Over Time (line + 7-day MA)
      - Review Time by Reviewer (horizontal bars)
      - Compliance Flags Distribution (histogram)
      - Submissions by Department (bar chart)
      - Priority Distribution (colored bars)
-   - 4 performance KPIs
+   - **4 Performance KPIs:**
+     - Total SOPs
+     - Approval Rate %
+     - Average Review Time
+     - Active Reviewers
 
 5. **How to Submit (❓)**
-   - 4-step submission guide with styled cards
+   - 4-step submission guide with numbered cards
    - 7 comprehensive FAQ sections:
      - Required documents
-     - Review timeline
-     - File formats
+     - Review timeline (5-7 days)
+     - File formats accepted
      - Editing submissions
      - Contact information
      - Rejection process
-     - Status tracking
+     - Status tracking methods
 
 ---
 
-## 🚀 Next Steps
+## 🔄 Continuous Deployment from GitHub
 
-### 1. Access the Application
+### How to Update the App:
 
-Open your browser and navigate to:
-```
-https://ec-sop-management-platform-1444828305810485.aws.databricksapps.com
-```
-
-You'll be prompted to log in with your Databricks credentials.
-
-### 2. Test the Application
-
-- Navigate through all 5 pages
-- Submit a test SOP
-- Try filtering and searching
-- Export data to CSV
-- Review analytics charts
-- Test all FAQ expandables
-
-### 3. Integrate with SQL Serverless Warehouse (Future)
-
-To use SQL Serverless Warehouse for data operations:
-
-1. **Check if your workspace has serverless enabled:**
-```bash
-databricks warehouses list --profile DEFAULT -o json | grep enable_serverless_compute
-```
-
-2. **If serverless is available, update the app to use it:**
-   - Update `databricks_config.py` to specify warehouse ID
-   - Modify data loading functions to use SQL warehouse
-   - Redeploy the app
-
-3. **Example configuration in app.py:**
-```python
-from databricks import sql
-
-# Connect to SQL Serverless Warehouse
-connection = sql.connect(
-    server_hostname="fe-vm-hls-amer.cloud.databricks.com",
-    http_path="/sql/1.0/warehouses/YOUR_WAREHOUSE_ID",
-    access_token=dbutils.secrets.get("scope", "key")
-)
-```
-
-### 4. Customize (Optional)
-
-**Update Logo:**
-- Edit `app.py` line 262
-- Replace placeholder with your company logo
-- Commit to GitHub
-- Redeploy
-
-**Change Colors:**
-- Edit `app.py` CSS section (lines 23-202)
-- Or update `app.yaml` environment variables
-- Commit and redeploy
-
-**Redeploy from GitHub:**
+**1. Make Changes Locally:**
 ```bash
 cd /Users/suryasai.turaga/databricks-dash-app
-git add .
-git commit -m "Your changes"
-git push origin main
+# Edit files (app.py, requirements.txt, etc.)
+```
 
-# Then redeploy to Databricks
+**2. Commit and Push to GitHub:**
+```bash
+git add .
+git commit -m "Your update message"
+git push origin main
+```
+
+**3. Update Databricks Repo:**
+```bash
+# Pull latest from GitHub in Databricks Repos
+databricks repos update 4362073218627709 --branch main --profile DEFAULT
+```
+
+**4. Redeploy the App:**
+```bash
 databricks apps deploy ec-sop-management-platform \
-  --source-code-path "/Workspace/Users/suryasai.turaga@databricks.com/ec-sop-app" \
+  --source-code-path "/Workspace/Repos/suryasai.turaga@databricks.com/ec-sop-management-platform" \
   --mode SNAPSHOT \
   --profile DEFAULT
 ```
 
-### 5. Production Enhancements
+### Automated Deployment (Alternative):
 
-**Integrate with Delta Tables:**
+You can also pull the latest code and redeploy in one step:
+```bash
+# Update repo and redeploy
+databricks repos update 4362073218627709 --branch main --profile DEFAULT && \
+databricks apps deploy ec-sop-management-platform \
+  --source-code-path "/Workspace/Repos/suryasai.turaga@databricks.com/ec-sop-management-platform" \
+  --mode SNAPSHOT \
+  --profile DEFAULT
+```
 
-1. Create Delta Tables:
+---
+
+## 🚀 Quick Access Links
+
+| Resource | URL |
+|----------|-----|
+| **Live Application** | https://ec-sop-management-platform-1444828305810485.aws.databricksapps.com |
+| **GitHub Repository** | https://github.com/suryasai87/ec-sop-management-platform |
+| **Databricks Workspace** | https://fe-vm-hls-amer.cloud.databricks.com |
+| **Databricks Apps Console** | https://fe-vm-hls-amer.cloud.databricks.com/compute/apps?o=1602460480284688 |
+| **Databricks Repos** | /Workspace/Repos/suryasai.turaga@databricks.com/ec-sop-management-platform |
+
+---
+
+## 🛠️ Management Commands
+
+### Check App Status
+```bash
+databricks apps get ec-sop-management-platform --profile DEFAULT
+```
+
+### Check Repo Status
+```bash
+databricks repos get 4362073218627709 --profile DEFAULT
+```
+
+### List All Deployments
+```bash
+databricks apps list-deployments ec-sop-management-platform --profile DEFAULT
+```
+
+### Stop App
+```bash
+databricks apps stop ec-sop-management-platform --profile DEFAULT
+```
+
+### Start App
+```bash
+databricks apps start ec-sop-management-platform --profile DEFAULT
+```
+
+### Pull Latest from GitHub
+```bash
+databricks repos update 4362073218627709 --branch main --profile DEFAULT
+```
+
+### Redeploy from Repos
+```bash
+databricks apps deploy ec-sop-management-platform \
+  --source-code-path "/Workspace/Repos/suryasai.turaga@databricks.com/ec-sop-management-platform" \
+  --mode SNAPSHOT \
+  --profile DEFAULT
+```
+
+### Delete App
+```bash
+databricks apps delete ec-sop-management-platform --profile DEFAULT
+```
+
+### Delete Repo
+```bash
+databricks repos delete 4362073218627709 --profile DEFAULT
+```
+
+---
+
+## 📊 Current Data & Configuration
+
+### Sample Data (In-Memory):
+- **50 realistic SOP records** with comprehensive fields
+- **5 status types:** Pending, In Review, Approved, Rejected, Requires Changes
+- **6 reviewers:** John Doe, Jane Smith, Michael Johnson, Sarah Williams, David Brown, Emily Chen
+- **8 departments:** Manufacturing, Operations, HR, Finance, IT, Quality, Safety, Compliance
+- **Date range:** Last 6 months of submissions
+- **Realistic compliance flags** based on status
+- **Priority levels:** Low, Medium, High, Critical
+
+**Note:** Data is session-based. For production, integrate with Delta Tables (see below).
+
+---
+
+## 🗄️ Production Integration (Next Steps)
+
+### 1. Integrate with Delta Tables
+
+**Create Tables:**
 ```sql
 -- In Databricks SQL Editor
 CREATE DATABASE IF NOT EXISTS sop_tracking;
@@ -201,156 +277,158 @@ CREATE TABLE IF NOT EXISTS sop_tracking.submissions (
     compliance_flags INT,
     compliance_flag_details STRING,
     priority STRING,
-    implementation_date DATE
+    implementation_date DATE,
+    business_justification STRING,
+    impact_assessment STRING,
+    risk_assessment_complete BOOLEAN,
+    stakeholder_approvals_complete BOOLEAN,
+    compliance_reviews_complete BOOLEAN
 ) USING DELTA;
 ```
 
-2. Update `app.py` to use Delta Tables instead of sample data
+**Update app.py:**
+```python
+from databricks import sql
+from databricks_config import get_config
 
-3. Redeploy the updated app
+@st.cache_data
+def load_sop_data():
+    """Load from Delta Table instead of generating sample data"""
+    config = get_config()
 
----
-
-## 📊 Current Data
-
-The app currently uses **50 sample SOP records** generated in-memory:
-- 5 status types (Pending, In Review, Approved, Rejected, Requires Changes)
-- 6 reviewers (John Doe, Jane Smith, Michael Johnson, Sarah Williams, David Brown, Emily Chen)
-- 8 departments (Manufacturing, Operations, HR, Finance, IT, Quality, Safety, Compliance)
-- Last 6 months of submission data
-- Realistic compliance flags based on status
-- Priority levels (Low, Medium, High, Critical)
-
-**Note:** Data is session-based and will reset when the app restarts. For production use, integrate with Delta Tables.
-
----
-
-## 🛠️ Management Commands
-
-### Check App Status
-```bash
-databricks apps get ec-sop-management-platform --profile DEFAULT
+    with sql.connect(
+        server_hostname=config.hostname,
+        http_path=config.warehouse_http_path,
+        access_token=dbutils.secrets.get("scope", "token")
+    ) as connection:
+        with connection.cursor() as cursor:
+            cursor.execute("SELECT * FROM sop_tracking.submissions")
+            return cursor.fetchall_arrow().to_pandas()
 ```
 
-### View Deployments
-```bash
-databricks apps list-deployments ec-sop-management-platform --profile DEFAULT
+### 2. Enable SQL Serverless Warehouse
+
+When available, update `databricks_config.py`:
+```python
+WAREHOUSE_ID = "YOUR_SERVERLESS_WAREHOUSE_ID"
 ```
 
-### Stop App
-```bash
-databricks apps stop ec-sop-management-platform --profile DEFAULT
-```
+### 3. Add Email Notifications
 
-### Start App
-```bash
-databricks apps start ec-sop-management-platform --profile DEFAULT
-```
+Use the `NotificationService` class in `databricks_config.py`:
+```python
+from databricks_config import NotificationService
 
-### Redeploy App
-```bash
-databricks apps deploy ec-sop-management-platform \
-  --source-code-path "/Workspace/Users/suryasai.turaga@databricks.com/ec-sop-app" \
-  --mode SNAPSHOT \
-  --profile DEFAULT
-```
-
-### Delete App
-```bash
-databricks apps delete ec-sop-management-platform --profile DEFAULT
+notification = NotificationService(config)
+notification.send_submission_notification(sop_id, reviewer_email)
 ```
 
 ---
 
-## 📦 GitHub Repository
+## 🎨 Customization Guide
 
-**Repository URL:** https://github.com/suryasai87/ec-sop-management-platform
+### Update Logo
+**File:** `app.py` (line 262)
+```python
+# Replace this:
+st.markdown("...")  # Gradient placeholder
 
-**Clone Command:**
-```bash
-git clone https://github.com/suryasai87/ec-sop-management-platform.git
+# With this:
+st.image("/path/to/your/logo.png", use_container_width=True)
 ```
 
-**Repository Contents:**
-- `app.py` - Full Streamlit application (1089 lines)
-- `app.yaml` - Databricks deployment configuration
-- `requirements.txt` - Python dependencies
-- `databricks_config.py` - Delta Table integration utilities
-- `README.md` - Comprehensive documentation
-- `DEPLOYMENT_INFO.md` - This file
-- `.gitignore` - Git ignore rules
+### Change Colors
+**File:** `app.py` (lines 23-202) or `app.yaml`
 
----
+**CSS Variables:**
+```css
+:root {
+    --primary-blue: #3B82F6;      /* Change to your brand color */
+    --secondary-gray: #6B7280;
+    --success-green: #10B981;
+    --warning-yellow: #F59E0B;
+    --error-red: #EF4444;
+}
+```
 
-## 🔧 Configuration Files
-
-### app.yaml
+**Or in app.yaml:**
 ```yaml
-command:
-  - streamlit
-  - run
-  - app.py
-  - --server.port=8080
-  - --server.address=0.0.0.0
-  - --server.headless=true
-
-resources:
-  - name: sop-management-app
-    description: E&C SOP End-To-End Management Platform
-    port: 8080
+env:
+  - name: STREAMLIT_THEME_PRIMARY_COLOR
+    value: "#YOUR_COLOR"
 ```
 
-### requirements.txt
-```
-streamlit>=1.28.0
-pandas>=2.0.0
-plotly>=5.17.0
-numpy>=1.24.0
-python-dateutil>=2.8.0
-```
+### Add Company Branding
+1. Update logo (app.py:262)
+2. Update colors (app.py:23-202)
+3. Update contact info (app.py:1004-1024)
+4. Commit to GitHub
+5. Pull in Databricks Repos
+6. Redeploy
 
 ---
 
-## 📞 Support
+## 📞 Support & Documentation
 
-**For Technical Issues:**
-- Email: ec-support@company.com
-- Databricks Support: support@databricks.com
+### For Technical Support:
+- **Email:** ec-support@company.com
+- **Databricks Support:** support@databricks.com
+- **GitHub Issues:** https://github.com/suryasai87/ec-sop-management-platform/issues
 
-**For E&C Policy Questions:**
-- Email: ec-policy@company.com
-- Phone: (555) 123-4567
+### For E&C Policy Questions:
+- **Email:** ec-policy@company.com
+- **Phone:** (555) 123-4567
+- **Hours:** Monday-Friday, 9:00 AM - 5:00 PM EST
 
-**GitHub Issues:**
-- Report bugs: https://github.com/suryasai87/ec-sop-management-platform/issues
-
----
-
-## 📚 Documentation
-
-- **Full README:** `/Users/suryasai.turaga/databricks-dash-app/README.md`
-- **App Source:** `/Users/suryasai.turaga/databricks-dash-app/app.py`
-- **Configuration:** `/Users/suryasai.turaga/databricks-dash-app/app.yaml`
-- **GitHub Docs:** https://github.com/suryasai87/ec-sop-management-platform
+### Documentation:
+- **Full README:** https://github.com/suryasai87/ec-sop-management-platform/blob/main/README.md
+- **App Source:** https://github.com/suryasai87/ec-sop-management-platform/blob/main/app.py
+- **Configuration:** https://github.com/suryasai87/ec-sop-management-platform/blob/main/app.yaml
+- **Local Files:** /Users/suryasai.turaga/databricks-dash-app/
 
 ---
 
 ## 🎯 Deployment Summary
 
-✅ **GitHub Repository Created:** https://github.com/suryasai87/ec-sop-management-platform
-✅ **App Created** on Databricks (DEFAULT workspace)
-✅ **Files Deployed** from Workspace
-✅ **Deployment Successful** (SNAPSHOT mode)
+✅ **GitHub Repository:** https://github.com/suryasai87/ec-sop-management-platform
+✅ **Databricks Repos:** Connected and synced
+✅ **App Created:** ec-sop-management-platform
+✅ **Deployed from:** Repos (Git-backed)
+✅ **Deployment Status:** SUCCEEDED
 ✅ **App Status:** RUNNING
-✅ **All Features:** Working
+✅ **All Features:** Working (5 pages)
 ✅ **Sample Data:** 50 records loaded
 ✅ **Professional UI:** Custom CSS applied
+✅ **Source Control:** Git-based deployment
 
-**Compute Note:** LIQUID (serverless) compute was not available in this workspace. The app uses standard MEDIUM compute. To use SQL Serverless Warehouse for data operations, follow the integration steps above.
+### Key Achievement:
+🎉 **The app is now directly connected to GitHub!** Any changes you push to the repository can be pulled into Databricks Repos and redeployed automatically.
+
+---
+
+## 📝 Deployment Workflow
+
+```
+Local Development → GitHub → Databricks Repos → Databricks Apps
+     (Code)       (git push)    (repos update)    (apps deploy)
+```
+
+**This enables:**
+- ✅ Version control with Git
+- ✅ Collaborative development
+- ✅ Easy rollbacks to previous versions
+- ✅ Automated CI/CD potential
+- ✅ Transparent deployment history
 
 ---
 
 **Deployment Complete! 🎉**
 
-The E&C SOP Management Platform is live and accessible at:
+The E&C SOP Management Platform is now live and accessible:
 **https://ec-sop-management-platform-1444828305810485.aws.databricksapps.com**
+
+Deployed from GitHub repository:
+**https://github.com/suryasai87/ec-sop-management-platform**
+
+You can now access the app through the Databricks Apps console:
+**https://fe-vm-hls-amer.cloud.databricks.com/compute/apps?o=1602460480284688**
