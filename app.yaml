@@ -1,8 +1,36 @@
-command:
-  - python
-  - app.py
+# Databricks App Configuration for E&C SOP Management Platform
+# This file configures the Streamlit app deployment on Databricks Apps
 
+# Command to run the Streamlit application
+command:
+  - streamlit
+  - run
+  - app.py
+  - --server.port=8080
+  - --server.address=0.0.0.0
+  - --server.headless=true
+  - --browser.gatherUsageStats=false
+
+# Resource configuration
 resources:
-  - name: dash-app
-    description: Databricks Dash Application
+  - name: sop-management-app
+    description: E&C SOP End-To-End Management Platform
     port: 8080
+
+# Environment variables (optional)
+env:
+  - name: STREAMLIT_THEME_BASE
+    value: light
+  - name: STREAMLIT_THEME_PRIMARY_COLOR
+    value: "#3B82F6"
+  - name: STREAMLIT_THEME_BACKGROUND_COLOR
+    value: "#FFFFFF"
+  - name: STREAMLIT_THEME_SECONDARY_BACKGROUND_COLOR
+    value: "#F0F2F6"
+  - name: STREAMLIT_THEME_TEXT_COLOR
+    value: "#262730"
+  - name: STREAMLIT_THEME_FONT
+    value: "sans serif"
+
+# Optional: Specify Python version (usually handled by Databricks runtime)
+# python_version: "3.10"
