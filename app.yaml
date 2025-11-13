@@ -1,0 +1,8 @@
+command:
+  - python
+  - app.py
+
+resources:
+  - name: dash-app
+    description: Databricks Dash Application
+    port: 8080
