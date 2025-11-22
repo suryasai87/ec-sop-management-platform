@@ -150,14 +150,23 @@ The E&C SOP End-To-End Management Platform streamlines the process of submitting
 ## 📁 Project Structure
 
 ```
-databricks-dash-app/
+ec-sop-management-platform/
 ├── app.py                      # Main Streamlit application (900+ lines)
 ├── app.yaml                    # Databricks deployment configuration
+├── start.sh                    # Startup script with dynamic port configuration
 ├── requirements.txt            # Python dependencies
 ├── databricks_config.py        # Databricks integration utilities
 ├── README.md                   # This file
 └── .gitignore                  # Git ignore file
 ```
+
+### Key Files
+
+- **app.py**: Core Streamlit application with all UI and logic
+- **app.yaml**: Databricks Apps configuration using `start.sh` for deployment
+- **start.sh**: Shell script that reads port from environment variables (`DATABRICKS_APP_PORT` or `PORT`) to avoid 502 errors
+- **requirements.txt**: Python package dependencies
+- **databricks_config.py**: Helper utilities for Databricks integration
 
 ## 🗄️ Data Integration
 
@@ -337,9 +346,12 @@ streamlit run app.py
 
 ### Common Issues
 
-**Issue**: App won't start in Databricks
+**Issue**: App won't start in Databricks / 502 Bad Gateway errors
+- ✅ **FIXED**: This app now uses dynamic port configuration via `start.sh`
+- The app reads port from `DATABRICKS_APP_PORT` or `PORT` environment variables
 - Check `requirements.txt` is present
-- Verify `app.yaml` configuration
+- Verify `app.yaml` configuration points to `start.sh`
+- Ensure `start.sh` has execute permissions (`chmod +x start.sh`)
 - Check Databricks cluster is running
 - Review app logs in Databricks UI
 

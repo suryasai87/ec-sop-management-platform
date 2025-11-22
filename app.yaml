@@ -1,8 +1,6 @@
 # Databricks App Configuration for E&C SOP Management Platform
+# Uses dynamic port configuration to avoid 502 errors
 
 command:
-  - streamlit
-  - run
-  - app.py
-  - --server.port=8080
-  - --server.address=0.0.0.0
+  - /bin/bash
+  - start.sh
